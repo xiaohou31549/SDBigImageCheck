@@ -7,7 +7,7 @@
 
 #import "SDBigImageCheck.h"
 #import "SDWebImageDownloader+BigImageCheck.h"
-#import "SDWebImageCompat.h"
+#import <SDWebImage/SDWebImage.h>
 
 @implementation SDBigImageCheck
 

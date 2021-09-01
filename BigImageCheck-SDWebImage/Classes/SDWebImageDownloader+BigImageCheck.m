@@ -9,7 +9,7 @@
 
 #import "SDWebImageDownloader+BigImageCheck.h"
 #import "BigImageCheckSwizzle.h"
-#import "SDWebImage.h"
+#import <SDWebImage/SDWebImage.h>
 #import "NSURL+BigImageCheck.h"
 #import "SDBigImageCheck.h"
 
