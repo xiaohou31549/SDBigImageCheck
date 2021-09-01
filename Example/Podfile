@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'BigImageCheck-SDWebImage_Example' do
+  pod 'BigImageCheck-SDWebImage', :path => '../'
+
+  target 'BigImageCheck-SDWebImage_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
