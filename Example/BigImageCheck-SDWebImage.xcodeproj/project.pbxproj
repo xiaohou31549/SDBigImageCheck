@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		0767D70D2CB108A0DBAAC092 /* Pods-BigImageCheck-SDWebImage_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigImageCheck-SDWebImage_Tests.debug.xcconfig"; path = "Target Support Files/Pods-BigImageCheck-SDWebImage_Tests/Pods-BigImageCheck-SDWebImage_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		12BBCA2EB60BCB645238853E /* Pods_BigImageCheck_SDWebImage_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BigImageCheck_SDWebImage_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2829CAA2CFAE9EC6AA96C7C7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		2829CAA2CFAE9EC6AA96C7C7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		39DEE196CBC4723418F4B60B /* Pods-BigImageCheck-SDWebImage_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigImageCheck-SDWebImage_Tests.release.xcconfig"; path = "Target Support Files/Pods-BigImageCheck-SDWebImage_Tests/Pods-BigImageCheck-SDWebImage_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		50CDA6B64EFCFCF9D217338E /* Pods-BigImageCheck-SDWebImage_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigImageCheck-SDWebImage_Example.release.xcconfig"; path = "Target Support Files/Pods-BigImageCheck-SDWebImage_Example/Pods-BigImageCheck-SDWebImage_Example.release.xcconfig"; sourceTree = "<group>"; };
 		535CCC38E2F2B9B8270341E2 /* Pods-BigImageCheck-SDWebImage_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigImageCheck-SDWebImage_Example.debug.xcconfig"; path = "Target Support Files/Pods-BigImageCheck-SDWebImage_Example/Pods-BigImageCheck-SDWebImage_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -62,10 +62,10 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		68BF15B7A443C95F52FDF536 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		68BF15B7A443C95F52FDF536 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		98785583DCAE7431BF2B0E5D /* BigImageCheck-SDWebImage.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = "BigImageCheck-SDWebImage.podspec"; path = "../BigImageCheck-SDWebImage.podspec"; sourceTree = "<group>"; };
+		98785583DCAE7431BF2B0E5D /* BigImageCheck-SDWebImage.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "BigImageCheck-SDWebImage.podspec"; path = "../BigImageCheck-SDWebImage.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		EB6FD6D90725AD2534779670 /* Pods_BigImageCheck_SDWebImage_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BigImageCheck_SDWebImage_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -193,7 +193,6 @@
 				0767D70D2CB108A0DBAAC092 /* Pods-BigImageCheck-SDWebImage_Tests.debug.xcconfig */,
 				39DEE196CBC4723418F4B60B /* Pods-BigImageCheck-SDWebImage_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -325,10 +325,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-BigImageCheck-SDWebImage_Example/Pods-BigImageCheck-SDWebImage_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BigImageCheck-SDWebImage/BigImageCheck_SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BigImageCheck_SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

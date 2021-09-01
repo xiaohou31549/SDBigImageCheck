@@ -1,0 +1,27 @@
+{
+  "name": "BigImageCheck-SDWebImage",
+  "version": "0.1.0",
+  "summary": "A short description of BigImageCheck-SDWebImage.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/lijun6/BigImageCheck-SDWebImage",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "houjigege": "tough913@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/lijun6/BigImageCheck-SDWebImage.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "BigImageCheck-SDWebImage/Classes/**/*",
+  "dependencies": {
+    "SDWebImage": [
+
+    ]
+  }
+}

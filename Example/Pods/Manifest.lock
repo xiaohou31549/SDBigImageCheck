@@ -1,0 +1,25 @@
+PODS:
+  - BigImageCheck-SDWebImage (0.1.0):
+    - SDWebImage
+  - SDWebImage (5.11.1):
+    - SDWebImage/Core (= 5.11.1)
+  - SDWebImage/Core (5.11.1)
+
+DEPENDENCIES:
+  - BigImageCheck-SDWebImage (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - SDWebImage
+
+EXTERNAL SOURCES:
+  BigImageCheck-SDWebImage:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BigImageCheck-SDWebImage: f320dff908e8798ce9b5e869be400eb1f4c8d3f8
+  SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
+
+PODFILE CHECKSUM: 54542ab16bf1f97b2a1eeb59c1825f219dca23a9
+
+COCOAPODS: 1.9.3

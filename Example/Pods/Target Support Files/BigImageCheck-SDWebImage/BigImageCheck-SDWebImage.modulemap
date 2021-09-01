@@ -1,0 +1,6 @@
+framework module BigImageCheck_SDWebImage {
+  umbrella header "BigImageCheck-SDWebImage-umbrella.h"
+
+  export *
+  module * { export * }
+}
