@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SDWebImageDownloader (BigImageCheck)
 
-+ (void)startSwizzle;
+- (id<SDWebImageOperation>)bic_swizzle_sd_requestImageWithURL:(NSURL *)url options:(SDWebImageOptions)options context:(SDWebImageContext *)context progress:(SDImageLoaderProgressBlock)progressBlock completed:(SDImageLoaderCompletedBlock)completedBlock;
 
 @end
 

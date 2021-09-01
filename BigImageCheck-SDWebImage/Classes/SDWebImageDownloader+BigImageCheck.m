@@ -8,7 +8,6 @@
 #ifdef DEBUG
 
 #import "SDWebImageDownloader+BigImageCheck.h"
-#import "BigImageCheckSwizzle.h"
 #import <SDWebImage/SDWebImage.h>
 #import "NSURL+BigImageCheck.h"
 #import "SDBigImageCheck.h"
@@ -18,13 +17,6 @@ static CGFloat const kAnimateImageDefaultMaxSize = 50;
 
 
 @implementation SDWebImageDownloader (BigImageCheck)
-
-+ (void)startSwizzle
-{
-    SEL newSelector = @selector(bic_swizzle_sd_requestImageWithURL:options:context:progress:completed:);
-    SEL originSelector = @selector(requestImageWithURL:options:context:progress:completed:);
-    BigImageCheckSwizzleMethod(SDWebImageDownloader.class, originSelector, SDWebImageDownloader.class, newSelector);
-}
 
 - (id<SDWebImageOperation>)bic_swizzle_sd_requestImageWithURL:(NSURL *)url options:(SDWebImageOptions)options context:(SDWebImageContext *)context progress:(SDImageLoaderProgressBlock)progressBlock completed:(SDImageLoaderCompletedBlock)completedBlock {
     return [self bic_swizzle_sd_requestImageWithURL:url options:options context:context progress:progressBlock completed:^(UIImage * _Nullable image, NSData * _Nullable data, NSError * _Nullable error, BOOL finished) {
