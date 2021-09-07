@@ -12,6 +12,7 @@
 
 ### 接入
 
+podfile
 ```
 pod 'BigImageCheck-SDWebImage', '~> 0.1.3'
 ```
