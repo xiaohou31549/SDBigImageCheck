@@ -5,25 +5,16 @@
 [![License](https://img.shields.io/cocoapods/l/BigImageCheck-SDWebImage.svg?style=flat)](https://cocoapods.org/pods/BigImageCheck-SDWebImage)
 [![Platform](https://img.shields.io/cocoapods/p/BigImageCheck-SDWebImage.svg?style=flat)](https://cocoapods.org/pods/BigImageCheck-SDWebImage)
 
-## Example
+### BigImageCheck-SDWebImage
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+检测SDWebImage下载的大图，图片大小超过预定义大小，会在图片上显示“大图 + 图片尺寸”提醒文字，只在Debug下生效，方便开发期间监控大图。
 
-## Requirements
 
-## Installation
+### 接入
 
-BigImageCheck-SDWebImage is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+pod 'BigImageCheck-SDWebImage', '~> 0.1.3'
 
-```ruby
-pod 'BigImageCheck-SDWebImage'
-```
 
-## Author
+### 使用
 
-lijun6, lijun6@yy.com
 
-## License
-
-BigImageCheck-SDWebImage is available under the MIT license. See the LICENSE file for more info.
